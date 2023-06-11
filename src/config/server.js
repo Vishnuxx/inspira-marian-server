@@ -5,10 +5,10 @@ const cors = require("cors")
 const app = express();
 
 const corsOptions = {
-  origin: "https://hoppscotch.io", 
-  methods: "GET,POST", 
-  allowedHeaders: "Content-Type,Authorization", 
-  optionsSuccessStatus: 200, 
+  origin: ["https://hoppscotch.io", env.CLIENT_URL],
+  methods: "GET,POST",
+  allowedHeaders: "Content-Type,Authorization",
+  optionsSuccessStatus: 200,
 };
 
 app.use(cors(corsOptions))
