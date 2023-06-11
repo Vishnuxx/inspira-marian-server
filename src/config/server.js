@@ -18,11 +18,9 @@ app.use(express.json());
 
 app.set("port", process.env.PORT || 3000);
 
-// app.get("/" , (req , res)=> {
-//   res.json({
-//     // name : "aarada nee"
-//   })
-// })
+app.get("/" , (req , res)=> {
+  res.send("OK")
+})
 
 app.listen(() => {
   console.log(`Server is running on port ${app.get("port")}`);
