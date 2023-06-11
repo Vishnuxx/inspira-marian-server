@@ -7,4 +7,5 @@ admin.initializeApp({
 
 module.exports = {
   DB: admin.firestore(),
+  FStorage: admin.storage()
 };

@@ -10,6 +10,7 @@ const uploadIdea = async (data) => {
       solution: data.solution,
       skills: data.skills,
       targetaudience: data.targetaudience,
+      classdetails: data.classdetails,
     });
     return response;
 };

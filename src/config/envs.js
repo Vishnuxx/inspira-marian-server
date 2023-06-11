@@ -2,10 +2,8 @@ const env = require("dotenv").config();
 
 module.exports.env = {
   PORT,
-  NOTION_API_KEY,
-  NOTION_PORTAL_DB_ID,
-  CLIENT_URL,
-  CLIENT_DOMAIN,
   MAILER_ID,
-MAILER_PASS
+  MAILER_PASS,
+  ALLOWED_DOMAINS,
+  CORS_ORIGINS
 } = process.env;
