@@ -16,14 +16,15 @@ app.use(cors(corsOptions))
 app.use(express.json());
 
 
-app.set("port", process.env.PORT || 3000);
+// app.set("port", process.env.PORT || 3000);
 
 app.get("/" , (req , res)=> {
+ 
   res.send("OK")
 })
 
-app.listen(() => {
-  console.log(`Server is running on port ${app.get("port")}`);
+app.listen(env.PORT || 3000 , () => {
+  console.log(`Server is running on port ${env.PORT}`);
 });
 
 module.exports = app;
