@@ -15,12 +15,12 @@ module.exports.getMedia = async (limit) => {
     return [];
   }
 
-  console.log("sdsd");
+
   const data = [];
   snapshot.forEach((doc) => {
     data.push(doc.data());
   });
 
-  console.log(data)
+  console.log("requested media")
   return data;
 };
